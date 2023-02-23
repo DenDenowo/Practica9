@@ -7,21 +7,21 @@ class Personaje:
     
   def correr(self,estado):
     if estado == True:
-        print('El personaje'+self.nombre+'esta corriendo')
+        print('El personaje '+self.nombre+' está corriendo')
     else:
-      print('El personaje'+self.nombre+'esta quieto')
+      print('El personaje '+self.nombre+' está quieto')
         
             
         
   def lanzarGranada(self):
-    print('El personaje'+self.nombre+'lanzo una granada')
+    print('El personaje '+self.nombre+' lanzó una granada')
 
   def recargarArma(self,municiones):
     cargador=5
     cargador = cargador + municiones
-    print('El personaje'+self.nombre+'recargo su arma y ahora tiene'+str(cargador)+'municiones')
+    print('El personaje '+self.nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
 
   def recargarArma(self,municiones):
     cargador=5
     cargador = cargador + municiones
-    print('El personaje'+self.nombre+'recargo su arma y ahora tiene'+str(cargador)+'municiones')
+    print('El personaje '+self.nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
