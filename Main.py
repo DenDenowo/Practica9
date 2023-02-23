@@ -16,24 +16,27 @@ nomV = input("Escribe el nombre del villano: ")
 altV = float(input("Escribe la altura del villano: "))
 cargaV = int(input("¿Cuántas balas se puede recargar?: "))
 
-#3. Instanciar un objeto
-Heroe = Personaje()
+#3. Creamos dos objetos
+Heroe = Personaje(espH, nomH, altH)
+Villano = Personaje(espV, nomV, altV)
 
 #4. Acceder a sus atributos
-
-Heroe.nombre 
-Heroe.especie 
-Heroe.altura 
-
-#5. Acceder a sus metodos
-
-        
-print('Atributos del personaje: ')
-print("El personaje pertenece a la raza: " + Heroe.especie + " Se llama: " + Heroe.nombre + " Mide: " + str(Heroe.altura) + " metros")
-print('')
-
-print('Metodos del personaje: ')
-
-
-
+print("")
+print("Atributos y métodos del héroe")
+print("El personaje pertenece a la raza: " + Heroe.especie)
+print("Se llama: " + Heroe.especie)
+print("Mide: " + str(Heroe.altura) + "  metros")
 Heroe.correr(True)
+Heroe.lanzarGranada()
+Heroe.recargarArma(cargaH)
+print("")
+
+print("")
+print("Atributos y métodos del héroe")
+print("El personaje pertenece a la raza: " + Heroe.especie)
+print("Se llama: " + Heroe.especie)
+print("Mide: " + str(Heroe.altura) + "  metros")
+Villano.correr(False)
+Heroe.lanzarGranada()
+Heroe.recargarArma(cargaV)
+print("")
