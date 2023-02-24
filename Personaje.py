@@ -1,27 +1,25 @@
 class Personaje:
   #Creamos el constructor
   def __init__(self, esp, nom, alt):
-    self.nombre = nom
-    self.especie = esp
-    self.altura = alt
+    self.__nombre = nom
+    self.__especie = esp
+    self.__altura = alt
     
   def correr(self,estado):
     if estado == True:
-        print('El personaje '+self.nombre+' está corriendo')
+        print('El personaje '+self.__nombre+' está corriendo')
     else:
-      print('El personaje '+self.nombre+' está quieto')
-        
-            
+      print('El personaje '+self.__nombre+' está quieto')
         
   def lanzarGranada(self):
-    print('El personaje '+self.nombre+' lanzó una granada')
+    print('El personaje '+self.__nombre+' lanzó una granada')
 
   def recargarArma(self,municiones):
     cargador=5
     cargador = cargador + municiones
-    print('El personaje '+self.nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
+    print('El personaje '+self.__nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
 
   def recargarArma(self,municiones):
     cargador=5
     cargador = cargador + municiones
-    print('El personaje '+self.nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
+    print('El personaje '+self.__nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
