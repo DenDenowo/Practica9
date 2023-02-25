@@ -20,6 +20,8 @@ cargaV = int(input("¿Cuántas balas se puede recargar?: "))
 Heroe = Personaje(espH, nomH, altH)
 Villano = Personaje(espV, nomV, altV)
 
+Heroe.setNombre("Pepe Pecas")
+
 #4. Acceder a sus atributos
 print("")
 print("## Atributos y métodos del héroe ##")
@@ -29,6 +31,10 @@ print("Mide: " + str(Heroe.getAltura()) + " metros")
 Heroe.correr(True)
 Heroe.lanzarGranada()
 Heroe.recargarArma(cargaH)
+
+#Ejemplo de lo que no se puede hacer
+#Heroe.__pensar()
+
 print("")
 
 print("")

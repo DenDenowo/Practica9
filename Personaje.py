@@ -23,6 +23,10 @@ class Personaje:
     cargador=5
     cargador = cargador + municiones
     print('El personaje '+self.__nombre+' recargó su arma y ahora tiene: '+str(cargador)+' municiones')
+
+#Ejemplo de método privado
+  def __pensar(self):
+    print("Toy pensando......")
   
   def getNombre(self):
     return self.__nombre
